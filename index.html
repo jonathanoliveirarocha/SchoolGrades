@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Grades</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <div>
+            <h1>
+                Bem-Vindo ao School Grades
+            </h1>
+            <h4>Aqui você pode adicionar suas notas e gerenciá-las! </h4>
+        </div>
+        
+        <div id="nameAndAge">
+            <label for="name">Nome: </label>
+            <input id="name" name="name" type="text" placeholder="Digite Seu Nome"></p> 
+            <label for="age">Idade: </label>  
+            <input id="age" name="age" type="number" min="1" max="100" placeholder="Idade"></p> 
+            <input class="save" type="button" value="Salvar" onclick="SaveNameAndAge()">
+        </div>
+
+        <div id="addSubject" style="display: none;">
+
+            <label for="subjects">Matéria: </label>
+            <select name="subjects" id="subjects">
+                <option value="Língua Portuguesa">Língua Portuguesa</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Língua Inglesa">Língua Inglesa</option>
+                <option value="História">História</option>
+                <option value="Geografia">Geografia</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Física">Física</option>
+                <option value="Química">Química</option>
+                <option value="Filosofia">Filosofia</option>
+            </select>
+
+            <p>1º Bismestre: <input type="number" min="0" max="25" placeholder="" id="firstBimester"></p>
+            <p>2º Bismestre: <input type="number" min="0" max="25" placeholder="" id="secondBimester"></p>
+            <p>3º Bismestre: <input type="number" min="0" max="25" placeholder="" id="thirdBimester"></p>
+            <p>4º Bismestre: <input type="number" min="0" max="25" placeholder="" id="fourthBimester"></p>
+
+            <input class="save" type="button" value="Salvar" onclick="SaveSubject()">
+        
+        </div>
+
+        <div id="showGrades" style="display: none;">
+            <div id="header">
+                <h3 id="showName">Nome do Aluno: </h3>
+                <h3 id="showAge">Idade: </h3>
+            </div>
+            <br>
+            
+            <div id="addMoreSubjects">
+                <input class="addMoreSubjects" type="button" value="Adicionar Matéria" onclick="addMoreSubjects()">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
