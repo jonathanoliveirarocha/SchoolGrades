@@ -1,6 +1,5 @@
 var nameAge = []
 var subjectsAlreadyAdded = []
-var cont = 0 
 
 function SaveNameAndAge(){
     var name = document.getElementById("name").value
@@ -70,12 +69,8 @@ function SaveSubject(){
 
             document.getElementById("addSubject").style.display = "none"
             document.getElementById("showGrades").style.display = "block"
-            cont++
-            
 
-        
-
-       
+                   
         }
 
     }   
